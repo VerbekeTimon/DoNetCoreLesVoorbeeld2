@@ -8,9 +8,9 @@ namespace DoNetCoreLesVoorbeeld2.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public string Index(string name)
         {
-            return View();
+            return $"Hello {name}";
         }
     }
 }
