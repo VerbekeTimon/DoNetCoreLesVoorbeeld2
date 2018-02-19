@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -8,8 +7,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Groenten</title>
 </head>
 <body>
+    <h1>Index</h1>
+    @ViewBag.Groet
+
+    <a asp-controller="Home" asp-action="Groenten">Groenten</a>
+    <a asp-controller="Home" asp-action="Student">Studenten</a>
+
 </body>
 </html>
